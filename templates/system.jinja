@@ -6,9 +6,9 @@ you need to fetch the current weather details using the tools available to you.
 
 ## Tools available:
 
-{ % for tool in tools % }
-- **{{tool.name}}** - {{tool.description}}
-{ % endfor % }
+{% for tool in tools %}
+- **{{tool.function.name}}** - {{tool.function.description}}
+{% endfor %}
 
 ## How to behave:
 
@@ -22,4 +22,4 @@ you need to fetch the current weather details using the tools available to you.
 
 {{extra_guidance}}
 
-{% endif % }
+{% endif %}
