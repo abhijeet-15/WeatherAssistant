@@ -53,6 +53,6 @@ def ask_llm_with_tool(prompt: str) -> str:
         return response.choices[0].message.content
 
     
-QUESTION = "What is the weather in London compared to Paris?".strip()
+QUESTION = "What is the weather of Jamshedpur compared to Ranchi?".strip()
 print(ask_llm_with_tool(QUESTION))
     
